@@ -11,7 +11,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     private int mNumber=0;
     private TextView mTextView;
-    private Button mButtonTrue;
+    private Button mButtonT;
     private Button mButtonF;
     private  String mMessage="Are you ready for Quiz press next";
     private final static String SAVED_VALUE="save message ";
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         if(mNumber!=0) {
             boolean actual_result = isPrime(mNumber);
             boolean user_result = false;
-            mButtonTrue = (Button) findViewById((R.id.button));
+            mButtonT = (Button) findViewById((R.id.button));
             mButtonF = (Button) findViewById((R.id.button2));
 
             switch (v.getId()) {
