@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private int mNumber=0;
     private TextView mTextView;
     private Button mButtonTrue;
-    private Button mButtonFalse;
+    private Button mButtonF;
     private  String mMessage="Are you ready for Quiz press next";
     private final static String SAVED_VALUE="save message ";
     private final static String NUMBER="save number";
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
             boolean actual_result = isPrime(mNumber);
             boolean user_result = false;
             mButtonTrue = (Button) findViewById((R.id.button));
-            mButtonFalse = (Button) findViewById((R.id.button2));
+            mButtonF = (Button) findViewById((R.id.button2));
 
             switch (v.getId()) {
                 case R.id.button:
